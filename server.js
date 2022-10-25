@@ -35,7 +35,8 @@ app.get('/all', getData);
 
 // Post Route
 const postData = (req, res) => {
-    console.log(req.body);
-    res.send(req.body);
+    projectData = req.body;
+    console.log(projectData);
+    res.send(projectData);
 };
 app.post('/add', postData);
